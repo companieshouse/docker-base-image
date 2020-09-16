@@ -30,13 +30,15 @@ Follow below steps to package perl application as a Docker image:
 
 2. Create `Dockerfile` file with instructions below and adjust port number to one application uses:
 
-```dockerfile
-FROM 169942020521.dkr.ecr.eu-west-1.amazonaws.com/base/perl:5.18-centos
+   ```dockerfile
+    FROM 169942020521.dkr.ecr.eu-west-1.amazonaws.com/base/perl:5.18-centos
 
-ENV MOJO_LISTEN=http://*:9999
+    ENV MOJO_LISTEN=http://*:9999
 
-EXPOSE 9999
-```
+    EXPOSE 9999
+    ```
+  
+3. build Docker image using `docker build -t 169942020521.dkr.ecr.eu-west-1.amazonaws.com/local/[application name] .` command
 
 ## License
 
