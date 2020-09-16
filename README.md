@@ -3,6 +3,7 @@
 Base Docker images for perl applications.
 
 - [Supported images](#supported-images)
+- [Image properties](#image-properties)
 - [Sample use](#sample-use)
 - [Licence](#license)
 
